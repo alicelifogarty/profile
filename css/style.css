@@ -112,7 +112,7 @@ footer {
   z-index: -1;
   left: 0;
   right: 100%;
-  bottom: 0;
+  top: 0;
   background: rgba(236,16,72,.2);
   height: 10px;
   -webkit-transition-property: right;
@@ -218,6 +218,7 @@ nav a {
     top: 5px;
 }
 
+
 /*About*/
 
 .hello {
@@ -258,6 +259,14 @@ article {
 	padding: 20px 0;
 }
 
+.mainWork article {
+	min-height: 250px;
+	overflow: hidden;
+	position: relative;
+	display:block;
+	padding: 0;
+}
+
 .mainWork article h1 a {
 	text-decoration: none;
 	color:#EC1048;
@@ -266,8 +275,37 @@ article {
 .mainWork article h1{
 	font-size:48px;
 	text-align: center;
-	padding: 150px 0 100px 0;
+	padding: 0;
 	letter-spacing: 4px;
+}
+
+.mainWork article .mainWorkImage {
+	width: 100%;
+	z-index: 20;
+	position: relative;
+	margin: 0;
+}
+
+.mainWork article .titleAndLinks {
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	padding: 0;
+	left: 0;
+	z-index: 24;
+	overflow: hidden;
+	background: rgba(0,0,80,0.5) url(../img/LittleBackgroundOfStripes.png) repeat;
+}
+
+.mainWork article .titleAndLinks h1 {
+	text-align: center;
+	display:block;
+	margin: 0 auto;
+}
+
+.mainWork article h1 .hvr-underline-from-left:before {
+	top: 50%;
+	height: 25%;
 }
 
 .navSub {
@@ -286,13 +324,13 @@ article {
 	background-size:100% auto;
 }
 
-.vbms {
+/*.vbms {
 	background: url(../img/mainWork/vbms.jpg) no-repeat center top;
-}
+}*/
 
-.ccrh {
+/*.ccrh {
 	background: url(../img/mainWork/cchrTshirt.jpg) no-repeat center top;
-}
+}*/
 
 .wedding {
 	background: url(../img/mainWork/wedding.jpg) no-repeat center top;
@@ -341,13 +379,30 @@ article {
 	padding-bottom:90px;
 }
 
-.picCenter {
-	background-position:center;
+.workImg {
 	background-size:cover;
-	width:100%;
-	padding-top:70%;
-	margin: 20px 0;
-} 
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px 0;
+    width:100%;
+}
+
+.smallImg {
+	width:auto;s
+}
+
+.monogramImg {
+	padding-top: 80px;
+}
+
+.vbmsGreen .row {
+	padding: 35px 0 0 0;
+}
+
+#ccrhWeb img {
+	height:900px;
+}
 
 .lightGreen {
 	background-color:#F1FEF4;
@@ -356,11 +411,6 @@ article {
 .lightYellow {
 	background-color:#FEFEE8;
 }
-
-/*.fullPic {
-	width:100%;
-	padding-top:100%;
-}*/
 
 /*Side Projects*/
 
@@ -387,7 +437,7 @@ article {
 }
 
 .row {
-	margin: 40px -10px;
+	margin: 20px -10px;
 }
 
 .box {
@@ -433,92 +483,20 @@ article {
 	background: url(../img/wedding/weddingHero.jpg);
 }
 
-.monogramImg {
-	background: url(../img/wedding/monogram.png) no-repeat left top;
-	padding-top:50%;
-	background-size: contain;
-    background-position: center;
-    margin: 90px 0;
-}
-
-.saveTheDates {
-	background: url(../img/wedding/savethedate.jpg) no-repeat left top;
-}
-
-.thankYou {
-	background: url(../img/wedding/thankyoucard_mockup.jpg) no-repeat left top;
-}
-
-.row {
-
-}
-
 .weddingGrid .box {
 	width:50%;
 	float:left;
 }
 
 .boxTall {
-	width:100%;
-	padding-top:50%;
 	margin-bottom:20px;
-}
-
-.tableOne {
-	background: url(../img/wedding/tableOne.jpg) no-repeat left top;	
-	background-position: center;
-	background-size:cover;
-	padding-top:125%;
-}
-
-.tableSev {
-	background: url(../img/wedding/tableSeven.jpg) no-repeat left top;	
-	background-position: center;
-	background-size:cover;
-	padding-top:125%;
-}
-
-.tableTwo {
-	background: url(../img/wedding/tableTwo.jpg) no-repeat left top;	
-	background-position: center;
-	background-size:cover;
-	padding-top:65%;
-}
-
-.names {
-	background: url(../img/wedding/names.jpg) no-repeat left top;	
-	background-position: center;
-	background-size:cover;
-	padding-top:65%;
+	padding:0;
 }
 
 /*CCRH*/
 
 .ccrhHero {
 	background: url(../img/ccrh/ccrhHero.jpg) no-repeat left top;
-}
-
-.ccrhMobile {
-	background: url(../img/ccrh/ccrhMobileInviteMockuptransparent.png) no-repeat left top;
-    background-position: center;
-    background-size: contain;
-}
-
-.ccrhInvite {
-	background: url(../img/ccrh/ccrhInvitation.jpg) no-repeat left top;
-    background-position: center;
-}
-
-.ccrhDonor {
-	background: url(../img/ccrh/ccrhDonationCard.jpg) no-repeat left top;
-    background-position: center;
-    background-size: inherit;
-}
-
-.ccrhShirt {
-	background: url(../img/ccrh/ccrhShirtCard.jpg) no-repeat left top;
-	background-size: cover;
-    background-position: center;
 }
 
 .ccrhOrange {
@@ -540,19 +518,6 @@ article {
 	background: url(../img/vbms/vbmsHero2.jpg) no-repeat left top;
 	background-size: cover;
     background-position: center;
-}
-
-.vbmsWireframes {
-	background: url(../img/vbms/wireframes.jpg) no-repeat left top;
-	background-size: cover;
-    background-position: center;
-}
-
-.vbmsConnect {
-	background: url(../img/vbms/vbmsConnectiPhone.jpg) no-repeat left top;
-	background-size: cover;
-    background-position: center;
-    padding-top:100%;
 }
 
 .vbmsTemplates {
