@@ -125,10 +125,12 @@ footer {
 .mainWork article h1 .hvr-underline-from-left:before {
 	height: 25%;
 }
+article.movingNav h1 .hvr-underline-from-left:before {
+	height:35%;
+}
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
   right: 0;
 }
-
 
 .navSpace {
 	padding: 20px 0;
@@ -221,7 +223,6 @@ nav a {
     top: 5px;
 }
 
-
 /*About*/
 
 .hello {
@@ -312,14 +313,14 @@ article {
 	letter-spacing: 4px;
 }
 
-.mainWork article .mainWorkImage {
+article .mainWorkImage {
 	width: 100%;
 	z-index: 20;
 	position: relative;
 	margin: 0;
 }
 
-.mainWork article .titleAndLinks {
+article .titleAndLinks {
 	position: absolute;
 	width: 100%;
 	top: 35%;
@@ -327,13 +328,41 @@ article {
 	left: 0;
 	z-index: 24;
 	overflow: hidden;
-	/*background: rgba(0,0,0,0.5);*/
 }
 
-.mainWork article .titleAndLinks h1 {
+article.movingNav {
+	padding:0;
+	margin-bottom:90px;
+}
+
+.workSub article#posters {
+	padding-bottom:0;
+}
+
+.movingNav .row {
+	margin:0px;
+}
+
+article .titleAndLinks h1 {
 	text-align: center;
 	display:block;
 	margin: 0 auto;
+	padding:0;
+}
+
+article.movingNav .titleAndLinks {
+	position: relative;
+}
+
+article.movingNav .titleAndLinks h1 {
+	font-size:36px;
+}
+article.movingNav .titleAndLinks a {
+	color:#EC1048;
+}
+
+.movingNav .box {
+	width:50%;
 }
 
 .navSub {
@@ -420,24 +449,6 @@ article {
 
 .sideProjectsHero {
 	background: url(../img/sideProjects/goodbye3Main.jpg) no-repeat center top;
-}
-
-.goodbyePoster {
-	background: url(../img/sideProjects/goodbyeFrame.jpg) no-repeat center top;
-	background-position: center;
-	/*background-size: 1920px;*/
-	background-size:cover;
-	margin-top:45px;
-	height:700px;
-}
-
-.kissPoster {
-	background: url(../img/sideProjects/kissingGoodbyeFrame.jpg) no-repeat center top;
-	background-position: center;
-	background-size: cover;
-	/*background-size: 1920px;*/
-	/*margin-bottom:45px;*/
-	height:700px;
 }
 
 .back {

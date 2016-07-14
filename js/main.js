@@ -14,7 +14,7 @@ jQuery( document ).ready(function() {
         var smoothStateOptions = {
             prefetch: true,
             cacheLength: 2,
-            anchors: '.mainWork a',
+            anchors: '.mainWork a, .movingNav a', 
             onStart: {
                 duration: 2400, // Duration of our animation
                 render: function ($container) {
