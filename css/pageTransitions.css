@@ -37,8 +37,8 @@
 
 
 .is-entering {
-  -webkit-animation-duration: 2.4s;
-  animation-duration: 2.4s;
+  -webkit-animation-duration: .25s;
+  animation-duration: .25s;
   transition-timing-function: ease-in;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -47,8 +47,8 @@
 }
 
 .is-exiting {
-  -webkit-animation-duration: 2.4s;
-  animation-duration: 2.4s;
+  -webkit-animation-duration: .25s;
+  animation-duration: .25s;
   transition-timing-function: ease-in;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;

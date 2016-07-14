@@ -112,15 +112,18 @@ footer {
   z-index: -1;
   left: 0;
   right: 100%;
-  top: 0;
+  top: 50%;
   background: rgba(236,16,72,.2);
-  height: 10px;
+  height: 30%;
   -webkit-transition-property: right;
   transition-property: right;
   -webkit-transition-duration: 0.6s;
   transition-duration: 0.6s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+}
+.mainWork article h1 .hvr-underline-from-left:before {
+	height: 25%;
 }
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
   right: 0;
@@ -235,8 +238,38 @@ nav a {
 
 /*Work Main*/
 
-.mainWork li a,
-.navSub a,
+.mainWork li {
+	padding: 0 50px;
+	font-size: 16px;
+}
+
+.navSub.mainWork li a {
+	color:black;
+}
+
+.navSub.mainWork li {
+	display:inline-block;
+	border-right: 1px solid black;
+
+}
+.navSub.mainWork li:last-child {
+	display:inline-block;
+	border-right: 0px;
+	padding-right:0;
+}
+.navSub.mainWork li:first-child {
+	padding-left:310px;
+}
+.navSub.mainWork .ccrh li:first-child {
+	padding-left:320px;
+}
+
+.navSub.mainWork .wedding li:first-child {
+	padding-left:250px;
+}
+
+/*.mainWork li a,*/
+.hero .navSub a,
 .ccrhOrange h1,
 .ccrhOrange h2,
 .ccrhGray h1,
@@ -260,7 +293,7 @@ article {
 }
 
 .mainWork article {
-	min-height: 250px;
+	min-height: 450px;
 	overflow: hidden;
 	position: relative;
 	display:block;
@@ -289,12 +322,12 @@ article {
 .mainWork article .titleAndLinks {
 	position: absolute;
 	width: 100%;
-	top: 30%;
+	top: 35%;
 	padding: 0;
 	left: 0;
 	z-index: 24;
 	overflow: hidden;
-	background: rgba(0,0,80,0.5) url(../img/LittleBackgroundOfStripes.png) repeat;
+	/*background: rgba(0,0,0,0.5);*/
 }
 
 .mainWork article .titleAndLinks h1 {
@@ -303,41 +336,12 @@ article {
 	margin: 0 auto;
 }
 
-.mainWork article h1 .hvr-underline-from-left:before {
-	top: 50%;
-	height: 25%;
-}
-
 .navSub {
 	line-height: 1.5;
 }
 
-.mainWork li {
-	padding-left: 100px;
-	font-size: 16px;
-}
-
 .mainWork article {
-	background-position: top center;
-	/*background-attachment:fixed;*/
 	margin: 100px 0;
-	background-size:100% auto;
-}
-
-/*.vbms {
-	background: url(../img/mainWork/vbms.jpg) no-repeat center top;
-}*/
-
-/*.ccrh {
-	background: url(../img/mainWork/cchrTshirt.jpg) no-repeat center top;
-}*/
-
-.wedding {
-	background: url(../img/mainWork/wedding.jpg) no-repeat center top;
-}
-
-.sideProjects {
-	background: url(../img/mainWork/goodbyePosterTest.jpg) no-repeat center top;
 }
 
 /*Work Sub Page*/
@@ -389,7 +393,7 @@ article {
 }
 
 .smallImg {
-	width:auto;s
+	width:auto;
 }
 
 .monogramImg {
@@ -436,45 +440,41 @@ article {
 	height:700px;
 }
 
+.back {
+	background: url(../img/sideProjects/background.jpg) no-repeat center top;
+	background-position: center;
+	background-size: cover;
+	padding:40px 0;
+	margin:40px 0;
+}
+
 .row {
 	margin: 20px -10px;
 }
 
 .box {
 	padding:10px;
-	width:36%;
+	width:33%;
 	float:left;
 }
 
 .box.bigBox {
-	width:63%;
+	width:66%;
+}
+
+.lightGreen .box .workImg {
+	padding:0px;
+	margin:10px;
+}
+
+.lightGreen .box .workImg.gth {
+	padding-bottom:10px;
 }
 
 .smallBox {
 	background-position: center;
 	background-size: cover;
 	padding-top:78%;
-}
-
-
-.jolene {
-	background: url(../img/sideProjects/joleneMockUp.jpg) no-repeat left top;
-	background-position: center;
-	background-size:cover;
-	padding-top:90%;
-}
-
-.gth {
-	background: url(../img/sideProjects/GoToHell_Frame.jpg) no-repeat left top;
-    background-position: center;
-    background-size: cover;
-}
-
-.happy {
-	background: url(../img/sideProjects/happyAnniversary.jpg) no-repeat left top;
-	margin-top:20px;
-	background-position: center;
-    background-size: cover;
 }
 
 /*Wedding*/
@@ -543,6 +543,10 @@ article {
 
 .vbmsDrkBlue {
 	background-color:rgba(3,67,126,1);
+}
+
+.vbmsDrkBlue p {
+	color:#d3d3d3;
 }
 
 .vbmsGreen {
