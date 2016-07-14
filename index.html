@@ -1,23 +1,85 @@
 ---
 layout: default
+title: home
 ---
 
-<div class="home">
+  <header class="clearfix navSpace">
+    <div class="container">
+      <img src="img/logo_100px.png" alt="Logo" class="logo"><p class="logoTag" />Alice Li | Designer &amp; Developer</p>
+      <nav>
+        <ul>
+          <li><a href="about.html" class="hvr-underline-from-left">About</a></li>
+          <li><a href="work.html" class="hvr-underline-from-left">Work</a></li>
+        </ul>
+      </nav>
+    </div> <!-- close container -->
+  </header>
+  <div class ="clearfix container">
+    <section class="hello">
+      <h1>Hello Nice People</h1>
+    </section> <!-- close hello -->
+    <section class="content660">
+      <p>My name is Alice Li and I’m a designer and front-end web developer. After studying literature for four years and writing for eight, I completely changed directions and decided to become a graphic designer and web developer. I love creatively solving problems.</p> 
+      <p>My motto is never stop learning.</p>
+      <p>I’m currently available for freelance work. If you would like to work together or just say “hi,” feel free to<a href="mailto:alicelifogarty@gmail.com" target="_top" class="hvr-underline-from-left">write me an email.</a></p>
+      <p class="lastLine">Visit my <a href="https://www.linkedin.com/in/aliceli3" class="hvr-underline-from-left" target="_blank">LinkedIn</a> or <a href="" target="_blank" class="hvr-underline-from-left">download my resume</a>.</p>
+    </section> <!-- close content660 -->
+  </div> <!-- close container and clearfix -->
+<div class ="clearfix container">
+    <section class="navSub mainWork">
+      <h1>Work</h1>
+      <p class="content660">I can design what you want, and develop what you need. I would love to help!</p> 
+      <article class="vbms">
+        <div class="titleAndLinks">
+          <h1><a href="vbms.html" class="hvr-underline-from-left">VBMS</a></h1>
+<!--          <ul>
+            <li><a href="vbms.html#vbmsWeb" class="hvr-underline-from-left">Web</a></li>
+            <li><a href="vbms.html#vbmsVideos" class="hvr-underline-from-left">Videos</a></li>
+            <li><a href="vbms.html#vbmsBranding" class="hvr-underline-from-left">Branding</a></li>
+          </ul> -->
+        </div><!-- end titleAndLinks -->
+        <a href="vbms.html"><img src="img/mainWork/vbms.jpg" alt="VBMS" class="mainWorkImage" /></a>
+      </article>
+      <article class="ccrh">
+        <div class="titleAndLinks">
+          <h1><a href="ccrh.html" class="hvr-underline-from-left">CCRH</a></h1>
+<!--          <ul>
+            <li><a href="ccrh.html#ccrhWeb" class="hvr-underline-from-left">Web</a></li>
+            <li><a href="ccrh.html#ccrhPrint" class="hvr-underline-from-left">Print</a></li>
+            <li><a href="ccrh.html#tshirt" class="hvr-underline-from-left">T-Shirt</a></li>
+          </ul> -->
+        </div><!-- end titleAndLinks -->
+        <a href="ccrh.html" ><img src="img/mainWork/cchrTshirt.jpg" alt="CCRH" class="mainWorkImage"/></a>
+      </article>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!--      <article class="sbg">
+        <h1><a href="sbg.html" class="hvr-underline-from-left">SBG</a></h1>
+        <ul>
+          <li><a href="sbg.html#sbgBranding" class="hvr-underline-from-left">Branding</a></li>
+          <li><a href="sbg.html#sbgInfographics" class="hvr-underline-from-left">Infographics</a></li>
+        </ul>
+      </article> -->
+      <article class="wedding">
+        <div class="titleAndLinks">
+          <h1><a href="wedding.html" class="hvr-underline-from-left">Wedding</a></h1>
+<!--          <ul>
+            <li><a href="wedding.html#monogram" class="hvr-underline-from-left">Monogram</a></li>
+            <li><a href="wedding.html#weddingPrint" class="hvr-underline-from-left">Print</a></li>
+            <li><a href="wedding.html#weddingWeb" class="hvr-underline-from-left">Web</a></li>
+          </ul> -->
+        </div><!-- end titleAndLinks -->
+        <a href="wedding.html" ><img src="img/mainWork/wedding.jpg" alt="Wedding" class="mainWorkImage" /></a>
+      </article>
+      <article class="sideProjects">
+        <div class="titleAndLinks">
+          <h1><a href="sideProjects.html" class="hvr-underline-from-left">Side Projects</a></h1>
+<!--          <ul>
+            <li><a href="sideProjects.html#handLettering" class="hvr-underline-from-left">Hand Lettering</a></li>
+            <li><a href="sideProjects.html#posters" class="hvr-underline-from-left">Posters</a></li>
+          </ul> -->
+        </div><!-- end titleAndLinks -->
+        <a href="sideProjects.html"><img src="img/mainWork/goodbyeposter.jpg" alt="Side Projects" class="mainWorkImage"/></a>
+      </article>
+      <p class="content660 lastLine">I’m currently available for freelance work. If you would like to work together or just say “hi,” feel free to<a href="mailto:alicelifogarty@gmail.com" target="_top" class="hvr-underline-from-left">write me an email.</a></p>
+    </section>
+  </div> <!-- closes clearfix and container -->
