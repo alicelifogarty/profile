@@ -2,14 +2,19 @@
 
 // on click of leftBigPic, rightTopPic, rightBtmPic enlarge to whole screen
 
-$( document ).ready(function() {
+jQuery( document ).ready(function() {
 
-        'use strict';
+    jQuery(".fancybox").fancybox({
+             openEffect  : 'none',
+            closeEffect : 'none'
+    });
+
+    'use strict';
 
         var smoothStateOptions = {
             prefetch: true,
             cacheLength: 2,
-            anchors: 'a',
+            anchors: '.mainWork a',
             onStart: {
                 duration: 2400, // Duration of our animation
                 render: function ($container) {
