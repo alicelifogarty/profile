@@ -47,7 +47,7 @@ a {
 nav {
 	padding: 15px 0;
 	float:right;
-	width:35%;
+	width:37%;
 }
 
 h1, h2, h3 {
@@ -80,6 +80,7 @@ footer {
 	padding: 20px 0;
 	font-size:16px;
 	color: #4D4D4D;
+	margin-top:40px;
 }
 
 /******************************************
@@ -125,7 +126,7 @@ footer {
 .mainWork article h1 .hvr-underline-from-left:before {
 	height: 25%;
 }
-article.movingNav h1 .hvr-underline-from-left:before {
+.movingNav a .hvr-underline-from-left:before {
 	height:35%;
 }
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
@@ -155,6 +156,10 @@ article.movingNav h1 .hvr-underline-from-left:before {
 .accent {
 	font-size:16px;
 	color:#4D4D4D;
+}
+
+.hero .accent {
+	color:white;
 }
 
 .photocredit {
@@ -313,14 +318,16 @@ article {
 	letter-spacing: 4px;
 }
 
-article .mainWorkImage {
+article .mainWorkImage,
+.movingNav .titleAndLinks {
 	width: 100%;
 	z-index: 20;
 	position: relative;
 	margin: 0;
 }
 
-article .titleAndLinks {
+article .titleAndLinks,
+.movingNav .titleAndLinks {
 	position: absolute;
 	width: 100%;
 	top: 35%;
@@ -330,7 +337,7 @@ article .titleAndLinks {
 	overflow: hidden;
 }
 
-article.movingNav {
+.movingNav {
 	padding:0;
 	margin-bottom:90px;
 }
@@ -350,19 +357,52 @@ article .titleAndLinks h1 {
 	padding:0;
 }
 
-article.movingNav .titleAndLinks {
+.movingNav .titleAndLinks {
 	position: relative;
 }
 
-article.movingNav .titleAndLinks h1 {
+.movingNav .titleAndLinks h1 {
 	font-size:36px;
 }
-article.movingNav .titleAndLinks a {
+.movingNav .titleAndLinks a {
 	color:#EC1048;
 }
 
 .movingNav .box {
 	width:50%;
+}
+
+.footerPrevNextThumbNavBox {
+    position:relative;
+    overflow:hidden;
+    height: 300px;
+    margin-bottom:40px;
+}
+
+
+.footerPrevNextThumbNavBox .titleAndLinks {
+    font-family:'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    position: absolute;
+    width: 100%;
+    top: 32%;
+    left: 0;
+    z-index: 24;
+    overflow: hidden;
+    font-size:36px;
+    text-align: center;
+    display:block;
+    margin: 0 auto;
+    padding:0;
+    text-transform: uppercase;
+}
+
+.footerPrevNextThumbNavBox .titleAndLinks a {
+    color:#EC1048;
+}
+
+.footerPrevNextThumbNavBox img {
+    width: 100%;
 }
 
 .navSub {
@@ -449,6 +489,7 @@ article.movingNav .titleAndLinks a {
 
 .sideProjectsHero {
 	background: url(../img/sideProjects/goodbye3Main.jpg) no-repeat center top;
+	background-color: #242424;
 }
 
 .back {
@@ -491,7 +532,8 @@ article.movingNav .titleAndLinks a {
 /*Wedding*/
 
 .weddingHero {
-	background: url(../img/wedding/weddingHero.jpg);
+	background: url(../img/wedding/weddingHero.jpg) no-repeat center bottom;
+	background-color:#2b2b2b;
 }
 
 .weddingGrid .box {
@@ -507,7 +549,8 @@ article.movingNav .titleAndLinks a {
 /*CCRH*/
 
 .ccrhHero {
-	background: url(../img/ccrh/ccrhHero.jpg) no-repeat left top;
+	background: url(../img/ccrh/ccrhHero.jpg) no-repeat center top;
+	background-color: #00c3a9;
 }
 
 .ccrhOrange {
@@ -526,21 +569,9 @@ article.movingNav .titleAndLinks a {
 /*VBMS*/
 
 .vbmsHero {
-	background: url(../img/vbms/vbmsHero2.jpg) no-repeat left top;
+	background: url(../img/vbms/vbmsHero2.jpg) no-repeat center top;
 	background-size: cover;
     background-position: center;
-}
-
-.vbmsTemplates {
-	background: url(../img/vbms/vbmsTemplates.jpg) no-repeat left top;
-	background-size: contain;
-	background-position: center;
-}
-
-.vbmsTemplateClose {
-	background: url(../img/vbms/vbmsTemplateCloseup.jpg) no-repeat left top;
-	background-size: contain;
-	background-position: center;
 }
 
 .box.connect {
@@ -570,3 +601,174 @@ article.movingNav .titleAndLinks a {
 	margin-left:70px;
 }
 
+@media screen and (max-width: 1055px) {
+	.content660 {
+		width:100%;
+	}
+
+	.container {
+		max-width:850px;
+	}
+
+	/*article .titleAndLinks, */
+	.movingNav .titleAndLinks {
+		top:40%;
+	}
+
+	.footerPrevNextThumbNavBox {
+	    height: 200px;
+	    margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.container {
+		max-width:650px;
+	}
+
+	nav {
+		width:57%;
+		padding: 28px 0;
+	}
+
+	.logoTag {
+		width:27%;
+	}
+
+	.logo {
+		margin-top:12px;
+	}
+
+	.navSpace {
+		height:115px;
+	}
+
+	h1 {
+		font-size: 62px;
+	}
+
+	.mainWork article {
+		margin:50px 0;
+		min-height:200px;
+	}
+
+	.box.connect {
+		width:100%;
+	}
+
+	.box.connect.videoMargin {
+		margin-top: 0;
+	}
+
+	.movingNav .titleAndLinks {
+		top:30%;
+	}
+
+	footer {
+		margin-top:60px;
+	}
+
+}
+
+@media screen and (max-width:588px) {
+
+	.movingNav .box {
+    	width: 100%;
+	}
+
+	.movingNav .titleAndLinks {
+		top:35%;
+	}
+}
+
+@media screen and (max-width:400px) {
+
+	.container {
+		max-width:300px;
+	}
+
+	.movingNav .titleAndLinks {
+		top:30%;
+	}
+
+	.row .footerPrevNextThumbNavBox {
+		margin-bottom:20px;
+	}
+
+	.sideProjectsHero {
+		background-position: -850px 0;
+	}
+
+	.navSpace {
+		height: 155px;
+	}
+
+	nav {
+		width:100%;
+		padding: 28px 0;
+		float:none;
+	}
+
+	nav a {
+		margin-left: 19px;
+    	margin-right: 19px;
+	}
+
+	.logoTag {
+		width:75%;
+		font-size:16px;
+		padding: 12px;
+	}
+
+	.photocredit {
+		text-align: left;
+	}
+
+	h1 {
+		font-size:40px;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	body {
+		font-size: 16px;
+	}
+
+	.smallImg {
+    	width: 85%;
+	}
+
+	.weddingGrid .box ,
+	.box.bigBox,
+	.box {
+    width: 100%;
+	}
+
+	.boxTall {
+		margin:10px;
+	}
+
+	.lightGreen .box .workImg.gth {
+		padding-bottom:20px;
+	}
+
+	#ccrhWeb img {
+    	height: 500px;
+	}
+
+	.workSubh1 {
+    padding: 190px 0 180px 0;
+	}
+	.boxTall {
+    padding: 10px;
+    margin:0;
+	}
+
+	.box {
+		padding-bottom:0;
+		padding-top:0;
+	}
+}
