@@ -669,6 +669,14 @@ article .titleAndLinks h1 {
 		margin-top:60px;
 	}
 
+		.lastLine {
+		padding-bottom: 20px;
+	}
+
+	h1 {
+		padding:20px 0;
+	}
+
 }
 
 @media screen and (max-width:588px) {
@@ -679,6 +687,10 @@ article .titleAndLinks h1 {
 
 	.movingNav .titleAndLinks {
 		top:35%;
+	}
+
+	.benefits {
+		margin-left:20px;
 	}
 }
 
@@ -718,7 +730,7 @@ article .titleAndLinks h1 {
 	.logoTag {
 		width:75%;
 		font-size:16px;
-		padding: 12px;
+		padding: 12px 12px 22px 12px;
 	}
 
 	.photocredit {
@@ -731,6 +743,10 @@ article .titleAndLinks h1 {
 
 	h2 {
 		font-size: 32px;
+	}
+
+	h3 {
+		font-size:24px;
 	}
 
 	body {
@@ -759,8 +775,8 @@ article .titleAndLinks h1 {
     	height: 500px;
 	}
 
-	.workSubh1 {
-    padding: 190px 0 180px 0;
+	.workSubh1, .sideProjectsHero .workSubh1 {
+    padding: 60px 0 50px 0;
 	}
 	.boxTall {
     padding: 10px;
@@ -771,4 +787,53 @@ article .titleAndLinks h1 {
 		padding-bottom:0;
 		padding-top:0;
 	}
+
+	.movingNav .titleAndLinks {
+    top: 24%;
+	}
+
+	footer {
+		margin-top:20px;
+	}
+
+	.row .footerPrevNextThumbNavBox {
+    	margin-bottom: 10px;
+	}
+
+	.row .footerPrevNextThumbNavBox {
+    	margin-bottom: 0px;
+	}
+
+	.workSub article {
+		padding-bottom:50px;
+	}
+	.workSub h1 {
+		padding-top:50px;
+	}
+
+	.weddingHero {
+		background: url(../img/wedding/weddingHero.jpg) no-repeat center top;
+	}
+
+	.mainWork article {
+    	margin: 20px 0;
+    	min-height: 100px;
+	}
+
+	article .titleAndLinks {
+    	top: 21%;
+	}
+
+	article .titleAndLinks .twoLinerh1 {
+		line-height: 1;
+	}
+
+	article.sideProjects .titleAndLinks {
+    	top: 16%;
+	}
+
+	.hello {
+		padding: 20px 0;
+	}
+
 }
