@@ -682,7 +682,7 @@ article .titleAndLinks h1 {
 	}
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:440px) {
 
 	.container {
 		max-width:300px;
