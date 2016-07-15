@@ -294,7 +294,7 @@ nav a {
 }
 
 /*.mainWork li a,*/
-.hero .navSub a,
+.hero .navSub ul li a,
 .ccrhOrange h1,
 .ccrhOrange h2,
 .ccrhGray h1,
@@ -305,7 +305,7 @@ nav a {
 .vbmsDrkBlue h1,
 .vbmsDrkBlue h2,
 .vbmsGreen h1,
-.vbmsGreen h2{
+.vbmsGreen h2. {
 	color:white;
 }
 
