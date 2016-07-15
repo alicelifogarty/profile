@@ -228,6 +228,25 @@ nav a {
     top: 5px;
 }
 
+/* Home */
+
+.mainWork .homePageWorkThumbnails article {
+	min-height:200px;
+
+}
+
+.mainWork .homePageWorkThumbnails article {
+	margin:20px 0;
+}
+
+.mainWork .homePageWorkThumbnails .box {
+	width: 50%;
+}
+
+.row.homePageWorkThumbnails {
+    margin: 0 -10px;
+}
+
 /*About*/
 
 .hello {
@@ -621,6 +640,12 @@ article .titleAndLinks h1 {
 	}
 }
 
+@media screen and (max-width: 880px){
+	.mainWork .homePageWorkThumbnails .box {
+		width:100%;
+	}
+}
+
 @media screen and (max-width: 768px){
 
 	.container {
@@ -680,6 +705,10 @@ article .titleAndLinks h1 {
 }
 
 @media screen and (max-width:588px) {
+
+	.container {
+		max-width: 450px;
+	}
 
 	.movingNav .box {
     	width: 100%;
@@ -836,4 +865,71 @@ article .titleAndLinks h1 {
 		padding: 20px 0;
 	}
 
+}
+
+@media print {
+  nav, .movingNav, .hero .workSubh1 ul, #return-to-top, #return-to-top i, #return-to-top:hover, #return-to-top:hover i {
+     display: none;
+   }
+
+   .sideProjectsHero .workSubh1,
+   .hero .workSubh1 {
+	padding: .5in 0;
+	}
+
+	.workSub h1 {
+    padding-top: 2cm;
+	}
+
+	.workSub article {
+    padding-bottom: 0;
+	}
+
+	.workSubh1 {
+		padding: 2cm 0;
+	}
+
+	h1 {
+		padding: 0;
+	}
+
+	.content660 {
+		width:100%;
+	}
+
+	.weddingGrid .box ,
+	.box.bigBox,
+	.box.connect,
+	.box.connect.imgMargin,
+	.box {
+    width: 100%;
+	}
+
+	article {
+		padding:0;
+	}
+
+	article .titleAndLinks {
+    	top: 27%;
+	}
+
+	article .homePageWorkThumbnails .titleAndLinks .twoLinerh1 {
+		line-height: 1;
+	}
+
+	article.sideProjects.homePage .titleAndLinks {
+    	top: 16%;
+	}
+
+	.hello {
+		padding: 1cm 0;
+	}
+
+	.mainWork article {
+    	margin: 1cm 0;
+	}
+
+	.weddingGrid img {
+		width:80%;
+	}
 }
