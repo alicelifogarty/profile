@@ -147,6 +147,10 @@ footer {
 	font-size:18px;
 }
 
+.navSpace.strongernavSpaceOpacity {
+	background-color: rgba(255,255,255,.4);
+}
+
 .logo {
 	width:50px;
 	margin-right:20px;
@@ -294,7 +298,7 @@ nav a {
 }
 
 /*.mainWork li a,*/
-.hero .navSub ul li a,
+.hero .navSub a,
 .ccrhOrange h1,
 .ccrhOrange h2,
 .ccrhGray h1,
@@ -305,7 +309,9 @@ nav a {
 .vbmsDrkBlue h1,
 .vbmsDrkBlue h2,
 .vbmsGreen h1,
-.vbmsGreen h2. {
+.vbmsGreen h2,
+.logoTag.white,
+nav .white {
 	color:white;
 }
 
@@ -619,6 +625,12 @@ article .titleAndLinks h1 {
 	list-style: circle;
 	margin-left:70px;
 }
+
+.workImg.connectMobile {
+	width:60%;
+}
+
+/*Responsive*/
 
 @media screen and (max-width: 1055px) {
 	.content660 {
