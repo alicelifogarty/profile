@@ -22,32 +22,23 @@ $('#return-to-top').click(function() {      // When arrow is clicked
     }, 500);
     });
 
-    function wow_add_scripts() {
-    wp_register_script(
-        'wow-script',
-        get_stylesheet_directory_uri() . '/wow.min.js',
-        false,
-        '1.0',
-        true
-    );
- 
-    wp_enqueue_script( 'wow-script' );
-    }
- 
-    add_action( 'wp_enqueue_scripts', 'wow_add_scripts' );
+    var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+    wow.init();
 
     new WOW().init();
-
-     wow = new WOW(
-    {
-        boxClass:     'wow',      // default
-        animateClass: 'animated', // change this if you are not using animate.css
-        offset:       0,          // default
-        mobile:       true,       // keep it on mobile
-        live:         true        // track if element updates
-      }
-    )
-   wow.init();
 
     // 'use strict';
 
