@@ -22,6 +22,22 @@ $('#return-to-top').click(function() {      // When arrow is clicked
     }, 500);
     });
 
+    function wow_add_scripts() {
+    wp_register_script(
+        'wow-script',
+        get_stylesheet_directory_uri() . '/wow.min.js',
+        false,
+        '1.0',
+        true
+    );
+ 
+    wp_enqueue_script( 'wow-script' );
+    }
+ 
+    add_action( 'wp_enqueue_scripts', 'wow_add_scripts' );
+
+    new WOW().init();
+
     // 'use strict';
 
     //     var smoothStateOptions = {
