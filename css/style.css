@@ -1,0 +1,947 @@
+/*
+Project Name: Alice Li Portfolio
+Author: Alice Li
+Developer and Designer
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	font-family: 'Libre Baskerville', serif;
+	font-size:22px;
+}
+
+a {
+	text-decoration:none;
+	color: #999999;
+}
+
+nav {
+	padding: 15px 0;
+	float:right;
+	width:37%;
+}
+
+h1, h2, h3 {
+	font-family:'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	font-size:72px;
+	text-transform: uppercase;
+	padding: 50px 0px;
+	color: #EC1048;
+	letter-spacing: 1px;
+}
+
+h2, h3{
+	font-size:48px;
+	padding:30px 0;
+
+}
+
+h3 {
+	font-size:36px;
+}
+
+p {
+	padding: 10px 0;
+	line-height: 1.7;
+}
+
+footer {
+	background-color:#F1FEF4;
+	padding: 20px 0;
+	font-size:16px;
+	color: #4D4D4D;
+	margin-top:40px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+	margin: 0 auto;
+	max-width:960px;
+	width:100%;
+}
+
+/*Main Navigation*/
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 50%;
+  background: rgba(236,16,72,.2);
+  height: 30%;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.mainWork article h1 .hvr-underline-from-left:before {
+	height: 25%;
+}
+.movingNav a .hvr-underline-from-left:before {
+	height:35%;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+.navSpace {
+	padding: 20px 0;
+	height: 90px;
+	background-color: rgba(255,255,255,.2);
+}
+
+.logoTag {
+	float:left;
+	width:40%;
+	display:block;
+	padding:10px 0;
+	font-size:18px;
+}
+
+.navSpace.strongernavSpaceOpacity {
+	background-color: rgba(255,255,255,.4);
+}
+
+.logo {
+	width:50px;
+	margin-right:20px;
+	float:left;
+}
+
+.accent {
+	font-size:16px;
+	color:#4D4D4D;
+}
+
+.hero .accent {
+	color:white;
+}
+
+.photocredit {
+	text-align:right;
+}
+
+nav ul {
+	list-style:none;
+	width: auto;
+
+}
+
+nav li {
+	display:inline-block;
+	float: right;
+}
+
+nav a {
+	color:black;
+	font-family:'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size:18px;
+	text-transform: uppercase;
+	margin-left: 30px;
+	margin-right:30px;
+}
+
+/* Scroll to Top */
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(236,16,72,.2);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(236,16,72,1);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/* Home */
+
+.mainWork .homePageWorkThumbnails article {
+	min-height:200px;
+
+}
+
+.mainWork .homePageWorkThumbnails article {
+	margin:20px 0;
+}
+
+.mainWork .homePageWorkThumbnails .box {
+	width: 50%;
+}
+
+.row.homePageWorkThumbnails {
+    margin: 0 -10px;
+}
+
+/*About*/
+
+.hello {
+	padding:100px 0;
+}
+
+.lastLine {
+	padding-bottom: 80px;
+}
+
+.content660 {
+	width:68%;
+}
+
+/*Work Main*/
+
+.mainWork li {
+	padding: 0 50px;
+	font-size: 16px;
+}
+
+.navSub.mainWork li a {
+	color:black;
+}
+
+.navSub.mainWork li {
+	display:inline-block;
+	border-right: 1px solid black;
+
+}
+.navSub.mainWork li:last-child {
+	display:inline-block;
+	border-right: 0px;
+	padding-right:0;
+}
+.navSub.mainWork li:first-child {
+	padding-left:310px;
+}
+.navSub.mainWork .ccrh li:first-child {
+	padding-left:320px;
+}
+
+.navSub.mainWork .wedding li:first-child {
+	padding-left:250px;
+}
+
+/*.mainWork li a,*/
+.hero .navSub a,
+.ccrhOrange h1,
+.ccrhOrange h2,
+.ccrhGray h1,
+.ccrhGreen h1, 
+.ccrhGreen h2,
+.vbmsBlue h1,
+.vbmsBlue h2,
+.vbmsDrkBlue h1,
+.vbmsDrkBlue h2,
+.vbmsGreen h1,
+.vbmsGreen h2,
+.logoTag.white,
+nav .white {
+	color:white;
+}
+
+.content660 a {
+	color:#999999;
+}
+
+article {
+	padding: 20px 0;
+}
+
+.mainWork article {
+	min-height: 450px;
+	overflow: hidden;
+	position: relative;
+	display:block;
+	padding: 0;
+}
+
+.mainWork article h1 a {
+	text-decoration: none;
+	color:#EC1048;
+}
+
+.mainWork article h1{
+	font-size:48px;
+	text-align: center;
+	padding: 0;
+	letter-spacing: 4px;
+}
+
+article .mainWorkImage,
+.movingNav .titleAndLinks {
+	width: 100%;
+	z-index: 20;
+	position: relative;
+	margin: 0;
+}
+
+article .titleAndLinks,
+.movingNav .titleAndLinks {
+	position: absolute;
+	width: 100%;
+	top: 35%;
+	padding: 0;
+	left: 0;
+	z-index: 24;
+	overflow: hidden;
+}
+
+.movingNav {
+	padding:0;
+	margin-bottom:90px;
+}
+
+.workSub article#posters {
+	padding-bottom:0;
+}
+
+.movingNav .row {
+	margin:0px;
+}
+
+article .titleAndLinks h1 {
+	text-align: center;
+	display:block;
+	margin: 0 auto;
+	padding:0;
+}
+
+.movingNav .titleAndLinks {
+	position: relative;
+}
+
+.movingNav .titleAndLinks h1 {
+	font-size:36px;
+}
+.movingNav .titleAndLinks a {
+	color:#EC1048;
+}
+
+.movingNav .box {
+	width:50%;
+}
+
+.footerPrevNextThumbNavBox {
+    position:relative;
+    overflow:hidden;
+    height: 300px;
+    margin-bottom:40px;
+}
+
+
+.footerPrevNextThumbNavBox .titleAndLinks {
+    font-family:'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    position: absolute;
+    width: 100%;
+    top: 32%;
+    left: 0;
+    z-index: 24;
+    overflow: hidden;
+    font-size:36px;
+    text-align: center;
+    display:block;
+    margin: 0 auto;
+    padding:0;
+    text-transform: uppercase;
+}
+
+.footerPrevNextThumbNavBox .titleAndLinks a {
+    color:#EC1048;
+}
+
+.footerPrevNextThumbNavBox img {
+    width: 100%;
+}
+
+.navSub {
+	line-height: 1.5;
+}
+
+.mainWork article {
+	margin: 100px 0;
+}
+
+/*Work Sub Page*/
+
+.hero {
+	background-position: center;
+	background-attachment:fixed;
+	background-size: cover;
+	padding-bottom: 50px;
+}
+
+.workSubh1 {
+	letter-spacing: 4px;
+	text-align: center;
+	padding: 200px 0 180px 0;
+}
+
+.sideProjectsHero .workSubh1 {
+	padding: 200px 0;
+}
+
+.workSub article p,
+.vbmsBlue ul {
+	-webkit-columns: 2 350px;
+    -moz-columns: 2 350px;
+    columns: 2 350px;
+}
+
+.workSub h1 {
+	padding-top:90px;
+	padding-bottom:15px;
+}
+
+.workSub li {
+	line-height: 1.5;
+}
+
+.workSub article {
+	padding-bottom:90px;
+}
+
+.workImg {
+	background-size:cover;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px 0;
+    width:100%;
+}
+
+.smallImg {
+	width:auto;
+}
+
+.monogramImg {
+	padding-top: 80px;
+}
+
+.vbmsGreen .row {
+	padding: 35px 0 0 0;
+}
+
+#ccrhWeb img {
+	height:900px;
+}
+
+.lightGreen {
+	background-color:#F1FEF4;
+}
+
+.lightYellow {
+	background-color:#FEFEE8;
+}
+
+/*Side Projects*/
+
+.sideProjectsHero {
+	background: url(../img/sideProjects/goodbye3Main.jpg) no-repeat center top;
+	background-color: #242424;
+}
+
+.back {
+	background: url(../img/sideProjects/background.jpg) no-repeat center top;
+	background-position: center;
+	background-size: cover;
+	padding:40px 0;
+	margin:40px 0;
+}
+
+.row {
+	margin: 20px -10px;
+}
+
+.box {
+	padding:10px;
+	width:33%;
+	float:left;
+}
+
+.box.bigBox {
+	width:66%;
+}
+
+.lightGreen .box .workImg {
+	padding:0px;
+	margin:10px;
+}
+
+.lightGreen .box .workImg.gth {
+	padding-bottom:10px;
+}
+
+.smallBox {
+	background-position: center;
+	background-size: cover;
+	padding-top:78%;
+}
+
+/*Wedding*/
+
+.weddingHero {
+	background: url(../img/wedding/weddingHero.jpg) no-repeat center bottom;
+	background-color:#2b2b2b;
+}
+
+.weddingGrid .box {
+	width:50%;
+	float:left;
+}
+
+.boxTall {
+	margin-bottom:20px;
+	padding:0;
+}
+
+/*CCRH*/
+
+.ccrhHero {
+	background: url(../img/ccrh/ccrhHero.jpg) no-repeat center top;
+	background-color: #00c3a9;
+}
+
+.ccrhOrange {
+	background-color:#FF652F;
+}
+
+.ccrhGray {
+	background-color:#373948;
+}
+
+.ccrhGreen {
+	background-color:#00C3A9;
+}
+
+
+/*VBMS*/
+
+.vbmsHero {
+	background: url(../img/vbms/vbmsHero2.jpg) no-repeat center top;
+	background-size: cover;
+    background-position: center;
+}
+
+.box.connect {
+	width:50%;
+	margin-top:-40px;
+}
+
+.vbmsBlue {
+	background-color:rgba(20,146,210,.6);
+}
+
+.vbmsDrkBlue {
+	background-color:rgba(3,67,126,1);
+}
+
+.vbmsDrkBlue p {
+	color:#d3d3d3;
+}
+
+.vbmsGreen {
+	background-color:#54ABAA;
+}
+
+.benefits {
+	line-height: 1.7;
+	list-style: circle;
+	margin-left:70px;
+}
+
+.workImg.connectMobile {
+	width:60%;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 1055px) {
+	.content660 {
+		width:100%;
+	}
+
+	.container {
+		max-width:850px;
+	}
+
+	/*article .titleAndLinks, */
+	.movingNav .titleAndLinks {
+		top:40%;
+	}
+
+	.footerPrevNextThumbNavBox {
+	    height: 200px;
+	    margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 880px){
+	.mainWork .homePageWorkThumbnails .box {
+		width:100%;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.container {
+		max-width:650px;
+	}
+
+	nav {
+		width:57%;
+		padding: 28px 0;
+	}
+
+	.logoTag {
+		width:27%;
+	}
+
+	.logo {
+		margin-top:12px;
+	}
+
+	.navSpace {
+		height:115px;
+	}
+
+	h1 {
+		font-size: 62px;
+	}
+
+	.mainWork article {
+		margin:50px 0;
+		min-height:200px;
+	}
+
+	.box.connect {
+		width:100%;
+	}
+
+	.box.connect.imgMargin {
+		margin-top: 0;
+	}
+
+	.movingNav .titleAndLinks {
+		top:30%;
+	}
+
+	footer {
+		margin-top:60px;
+	}
+
+		.lastLine {
+		padding-bottom: 20px;
+	}
+
+	h1 {
+		padding:20px 0;
+	}
+
+}
+
+@media screen and (max-width:588px) {
+
+	.container {
+		max-width: 450px;
+	}
+
+	.movingNav .box {
+    	width: 100%;
+	}
+
+	.movingNav .titleAndLinks {
+		top:35%;
+	}
+
+	.benefits {
+		margin-left:20px;
+	}
+}
+
+@media screen and (max-width:440px) {
+
+	.container {
+		max-width:300px;
+	}
+
+	.movingNav .titleAndLinks {
+		top:30%;
+	}
+
+	.row .footerPrevNextThumbNavBox {
+		margin-bottom:20px;
+	}
+
+	.sideProjectsHero {
+		background-position: -1100px 0;
+	}
+
+	.navSpace {
+		height: 155px;
+	}
+
+	nav {
+		width:100%;
+		padding: 28px 0;
+		float:none;
+	}
+
+	nav a {
+		margin-left: 19px;
+    	margin-right: 19px;
+	}
+
+	.logoTag {
+		width:75%;
+		font-size:16px;
+		padding: 12px 12px 22px 12px;
+	}
+
+	.photocredit {
+		text-align: left;
+	}
+
+	h1 {
+		font-size:40px;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size:24px;
+	}
+
+	body {
+		font-size: 16px;
+	}
+
+	.smallImg {
+    	width: 85%;
+	}
+
+	.weddingGrid .box ,
+	.box.bigBox,
+	.box {
+    width: 100%;
+	}
+
+	.boxTall {
+		margin:10px;
+	}
+
+	.lightGreen .box .workImg.gth {
+		padding-bottom:20px;
+	}
+
+	#ccrhWeb img {
+    	height: 500px;
+	}
+
+	.workSubh1, .sideProjectsHero .workSubh1 {
+    padding: 60px 0 50px 0;
+	}
+	.boxTall {
+    padding: 10px;
+    margin:0;
+	}
+
+	.box {
+		padding-bottom:0;
+		padding-top:0;
+	}
+
+	.movingNav .titleAndLinks {
+    top: 24%;
+	}
+
+	footer {
+		margin-top:20px;
+	}
+
+	.row .footerPrevNextThumbNavBox {
+    	margin-bottom: 10px;
+	}
+
+	.row .footerPrevNextThumbNavBox {
+    	margin-bottom: 0px;
+	}
+
+	.workSub article {
+		padding-bottom:50px;
+	}
+	.workSub h1 {
+		padding-top:50px;
+	}
+
+	.weddingHero {
+		background: url(../img/wedding/weddingHero.jpg) no-repeat center top;
+	}
+
+	.mainWork article {
+    	margin: 20px 0;
+    	min-height: 100px;
+	}
+
+	article .titleAndLinks {
+    	top: 21%;
+	}
+
+	article .titleAndLinks .twoLinerh1 {
+		line-height: 1;
+	}
+
+	article.sideProjects .titleAndLinks {
+    	top: 16%;
+	}
+
+	.hello {
+		padding: 20px 0;
+	}
+
+}
+
+@media print {
+  nav, .movingNav, .hero .workSubh1 ul, #return-to-top, #return-to-top i, #return-to-top:hover, #return-to-top:hover i {
+     display: none;
+   }
+
+   .sideProjectsHero .workSubh1,
+   .hero .workSubh1 {
+	padding: .5in 0;
+	}
+
+	.workSub h1 {
+    padding-top: 2cm;
+	}
+
+	.workSub article {
+    padding-bottom: 0;
+	}
+
+	.workSubh1 {
+		padding: 2cm 0;
+	}
+
+	h1 {
+		padding: 0;
+	}
+
+	.content660 {
+		width:100%;
+	}
+
+	.weddingGrid .box ,
+	.box.bigBox,
+	.box.connect,
+	.box.connect.imgMargin,
+	.box {
+    width: 100%;
+	}
+
+	article {
+		padding:0;
+	}
+
+	article .titleAndLinks {
+    	top: 27%;
+	}
+
+	article .homePageWorkThumbnails .titleAndLinks .twoLinerh1 {
+		line-height: 1;
+	}
+
+	article.sideProjects.homePage .titleAndLinks {
+    	top: 16%;
+	}
+
+	.hello {
+		padding: 1cm 0;
+	}
+
+	.mainWork article {
+    	margin: 1cm 0;
+	}
+
+	.weddingGrid img {
+		width:80%;
+	}
+}

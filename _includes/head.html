@@ -1,0 +1,19 @@
+<head>
+ <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" 
+      type="image/png" 
+      href="img/logo_50px.png" />
+	  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link href='https://fonts.googleapis.com/css?family=Raleway:900,600' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="fancyBox/source/jquery.fancybox.css" />
+	<link rel="stylesheet" href="css/pageTransitions.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
